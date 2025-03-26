@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DAF7A6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #35424a;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #DAF7A6;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #DAF7A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>User Information Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Farmer ID</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Farmer ID" required>
+            </div>
+            <div class="form-group">
+                <label for="adhar">Aadhaar Number:</label>
+                <input type="text" id="adhar" name="adhar" placeholder="Enter your Aadhaar number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address as per Aadhaar:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your address as per Aadhaar" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit"><a href="check.html">Submit</a></button><br>
+                <a href="sample.html" class="btn">Home</a><br>
+                <a href="login.html" class="btn" target="_blank">Already have a account?</a>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
